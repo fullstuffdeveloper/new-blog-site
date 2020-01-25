@@ -1,0 +1,39 @@
+.posts {
+    list-style-type: none;
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.post {
+    margin: 1rem 0.5rem;
+    border-radius: 30px;
+    width: 500px;
+    height: 200px;
+    display: inline-block;
+    background: rgb(10, 10, 10);
+    a {
+        color: #fff;
+        display: block;
+        padding: 1rem;
+        text-decoration: none;
+
+    }
+
+    h2 {
+        margin-bottom: 0;
+    }
+
+    p {
+        font-size: .8rem;
+        font-style: 'lato';
+        font-weight: 700;
+    }
+}
+
+.post:hover {
+    box-shadow: 3px 3px 5px 6px yellow;
+    position: relative;
+    background: rgb(172, 172, 27);
+    z-index: 100;
+}
