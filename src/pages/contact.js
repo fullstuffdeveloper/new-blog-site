@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/shared/layout/layout"
-import contactStyles from "./styles/contact.module.scss"
+import contactStyles from "../styles/contact.module.scss"
 import Head from "../components/shared/head"
 
 const ContactPage = () => {

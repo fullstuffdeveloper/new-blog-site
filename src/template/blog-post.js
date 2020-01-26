@@ -18,24 +18,32 @@ export const query = graphql`
 `
 const BlogPost = props => {
   console.log(props)
+  let alt = ""
+  let url = ""
   const options = {
     renderNode: {
       "embedded-asset-block": node => {
-        const alt = node.data.target.fields.title["en-US"]
-        const url = node.data.target.fields.file["en-US"].url
+        if (!node.data.target.fields) {
+          alt = ""
+          url = ""
+        } else if (node.data.target.fields) {
+          alt = node.data.target.fields.title["en-US"]
+          url = node.data.target.fields.file["en-US"].url
+        }
+        console.log(alt, url)
         return <img alt={alt} src={url} className={blogPostStyles.background} />
       },
     },
   }
   return (
-    <Layout className={blogPostStyles.text}>
+    <Layout>
       <Head title={props.data.contentfulBlogPost.title} />
-      <h1>{props.data.contentfulBlogPost.title}</h1>
-      <p>{props.data.contentfulBlogPost.publishedDate}</p>
-      {documentToReactComponents(
-        props.data.contentfulBlogPost.body.json,
-        options
-      )}
+      <div className={blogPostStyles.container}>
+        {documentToReactComponents(
+          props.data.contentfulBlogPost.body.json,
+          options
+        )}
+      </div>
     </Layout>
   )
 }

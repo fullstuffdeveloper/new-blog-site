@@ -44,7 +44,7 @@
 
     }
     &__social-container {
-        // position: absolute;
+        position: absolute;
         margin-left: 20px;
         font-family: 'lato' sans-serif;
         font-weight: 900;
@@ -54,8 +54,8 @@
         list-style-type: none;
         flex-direction: column;
         width: 100px;
-        top: 330px;
-        left: 32%;
+        top: 8%;
+        left: 2%;
         z-index: 100;
 
         &__item {
