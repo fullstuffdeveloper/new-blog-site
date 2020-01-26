@@ -2,7 +2,14 @@
     list-style-type: none;
     display: inline-block;
     text-align: center;
-    margin-top: 20px;
+    position: relative;
+    top: 26px;
+    height: 100vh;
+    
+}
+.background {
+    width: 100%;
+    height: 300px;
 }
 
 .post {
@@ -11,11 +18,16 @@
     width: 500px;
     height: 200px;
     display: inline-block;
-    background: rgb(10, 10, 10);
+    background-image: linear-gradient(to right top,rgba(32, 192, 192, 0.8) rgba(78, 167, 167, 0.8)), url('../images/pineapple-supply-co-ag-wBPpLR9g-unsplash.jpg');
+    background-size: cover;
+    background-position: top;
+    // background: rgb(10, 10, 10);
     a {
-        color: #fff;
+        color: rgb(7, 7, 7);
         display: block;
         padding: 1rem;
+        padding-top: 60px;
+        font-family: cursive;
         text-decoration: none;
 
     }
@@ -28,12 +40,15 @@
         font-size: .8rem;
         font-style: 'lato';
         font-weight: 700;
+        a {
+            padding-top: 60px;
+        }
     }
 }
 
 .post:hover {
     box-shadow: 3px 3px 5px 6px yellow;
     position: relative;
-    background: rgb(172, 172, 27);
+    background: #00B;
     z-index: 100;
 }

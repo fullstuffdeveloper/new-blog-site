@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/shared/layout/layout"
 import { graphql, useStaticQuery, Link } from "gatsby"
-import blogStyles from "./styles/blog.module.scss"
+import "../styles/blog.scss"
 
 const BlogPage = () => {
   const data = useStaticQuery(graphql`
@@ -12,6 +12,9 @@ const BlogPage = () => {
             title
             slug
             publishedDate(fromNow: true)
+            body {
+              json
+            }
           }
         }
       }
@@ -19,10 +22,10 @@ const BlogPage = () => {
   `)
   return (
     <Layout>
-      <ol className={blogStyles.posts}>
+      <ol className="posts">
         {data.allContentfulBlogPost.edges.map(edge => {
           return (
-            <li className={blogStyles.post} key={edge.node.slug}>
+            <li className="post" key={edge.node.slug}>
               <Link to={`/blog/${edge.node.slug}`}>
                 <h2>{edge.node.title}</h2>
                 <p>{edge.node.publishedDate}</p>
