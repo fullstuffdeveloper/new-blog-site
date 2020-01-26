@@ -27,7 +27,7 @@
             list-style: none;
             margin-right: 50px;
             margin-top: 15px;
-            background-color: rgb(227, 241, 22);
+            background-color: #00B1D2FF;
             border-radius: 30px;
             padding: 0 10px;
 
@@ -44,7 +44,7 @@
 
     }
     &__social-container {
-        position: absolute;
+        // position: absolute;
         margin-left: 20px;
         font-family: 'lato' sans-serif;
         font-weight: 900;
@@ -52,7 +52,8 @@
         flex-wrap: wrap;
         justify-content: flex-start;
         list-style-type: none;
-        flex-direction: row;
+        flex-direction: column;
+        width: 100px;
         top: 330px;
         left: 32%;
         z-index: 100;
@@ -65,11 +66,12 @@
             padding: 0 10px;
             color: white;
             margin-right: 34px;
+            margin-top: 20px;
         }
         &__item:hover {
             display: inline;
             list-style: none;
-            background-color: rgba(214, 236, 14, 0.842);
+            background-color: #00B;
             border-radius: 30px;
             padding: 0 10px;
             color: white;

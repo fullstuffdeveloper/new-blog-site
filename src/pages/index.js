@@ -11,12 +11,12 @@ const HomePage = () => {
     <Layout>
       <Head title="Home" />
       <div className="home-container">
-        <p className="home-container__main-text">
-          Hey I am Abhishek > A web developer i build website and Apps for
-          clients.
+        <p className="home-container__first-main-text">Hello</p>
+        <p className="home-container__second-main-text">
+          I build website and mobile app
           <FontAwesomeIcon icon={faHamburger} />
-          <FontAwesomeIcon icon={faInstagram} />
         </p>
+        <p className="home-container__third-main-text">I am Abhishek</p>
       </div>
     </Layout>
   )

@@ -5,18 +5,75 @@
 
 .home-container {
     height: 95vh;
-    background-image: linear-gradient(to right top,rgba(34, 39, 39, 0.8) rgba(6, 7, 7, 0.8)), url('../images/pineapple-supply-co-ag-wBPpLR9g-unsplash.jpg');
-    background-size: cover;
-    background-position: top;
-    clip-path: polygon(50% 0, 100% 100%, 0 100%);
+    transform: rotate3d(1, 1, 1, 291deg);
+    background-color: #12120f;
+    z-index: 149;
+    /* position: absolute; */
+    box-shadow: darkgreen;
+    box-shadow: #00B -141px 15px 348px 191px;    
+    margin-top: -72px;
+    // background-image: linear-gradient(to right top,rgba(34, 39, 39, 0.8) rgba(6, 7, 7, 0.8)), url('../images/pineapple-supply-co-ag-wBPpLR9g-unsplash.jpg');
+    // background-size: cover;
+    // background-position: top;
+    // clip-path: polygon(50% 0, 100% 100%, 0 100%);
 
-    &__main-text {
+    &__first-main-text {
         position: absolute;
-        top: 50%;
-        left: 34%;
+        font-family: 'lato', sans-serif;
+        font-weight: 700;
+        // letter-spacing: 1em;
+        top: 32%;
+        left: 19%;
         width: 312px;
-        background: black;
-        color: white;
+        // background: black;
+        color: rgb(206, 206, 206);
+        background-color: black;
+        height: 100px;
+        padding-top: 36px;
+        text-transform: uppercase;
+        box-shadow: #00B 71px 3px 3px 3px;
+        font-size: 19px;
+        letter-spacing: 1px;
+
+        
+    }
+    &__second-main-text {
+        position: absolute;
+        font-family: 'lato', sans-serif;
+        font-weight: 700;
+        // letter-spacing: 1em;
+        top: 49%;
+        left: 38%;
+        width: 543px;
+        // background: black;
+        color: rgb(206, 206, 206);
+        background-color: black;
+        height: 100px;
+        padding-top: 36px;
+        text-transform: uppercase;
+        text-decoration: underline;
+        box-shadow: #00B 40px 1px 3px 3px;   
+        font-size: 19px;
+        letter-spacing: 1px;     
+    }
+    &__third-main-text {
+        position: absolute;
+        font-family: 'lato', sans-serif;
+        font-weight: 700;
+        // letter-spacing: 1em;
+        top: 66%;
+        left: 19%;
+        width: 312px;
+        // background: black;
+        color: rgb(206, 206, 206);
+        background-color: black;
+        height: 100px;
+        padding-top: 36px;
+        text-transform: uppercase;
+        box-shadow: #00B 71px 3px 3px 3px;
+        font-size: 19px;
+        letter-spacing: 1px;
+
         
     }
     &__sub-text {
