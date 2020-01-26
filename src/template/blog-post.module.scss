@@ -1,6 +1,13 @@
 .background {
-    width: 100%;
-    height: 300px;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 60vw;
+    height: 95vh;
+    padding-bottom: 30px;
+    border-radius: 52px;
+    // border: 30px solid yellow;
+
 }
 
 .text {
@@ -9,6 +16,8 @@
 }
 .container {
     margin-top: 10px;
+    padding: 80px;
+
 }
 
 p {
