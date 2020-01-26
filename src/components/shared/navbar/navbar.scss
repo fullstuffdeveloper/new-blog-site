@@ -67,6 +67,8 @@
             color: white;
             margin-right: 34px;
             margin-top: 20px;
+            text-align: left;
+            padding: 10px;
         }
         &__item:hover {
             display: inline;
@@ -76,7 +78,13 @@
             padding: 0 10px;
             color: white;
             margin-right: 34px;
+            padding: 10px;
+           
         }
+        a {
+            text-decoration: none;
+            color: rgb(245, 245, 245);
+         }
     }
     &__toggle {
         display: flex;

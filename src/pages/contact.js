@@ -9,11 +9,12 @@ const ContactPage = () => {
     <Layout>
       <Head title="Contact" />
       <div className={contactStyles.contactContainer}>
-        <p>Contact page!</p>
-        <i
-          className="fab fa-instagram"
-          style={{ fontSize: "60px", color: "red" }}
-        ></i>
+        <p className={contactStyles.mainText}>
+          Hey, got an idea about your{" "}
+          <span className={contactStyles.appWeb}>app</span> or
+          <span className={contactStyles.appWeb}> website</span> then feel free
+          to contact me i will be available on my instagram in my free time.
+        </p>
       </div>
     </Layout>
   )
