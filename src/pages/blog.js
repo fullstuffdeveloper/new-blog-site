@@ -23,16 +23,25 @@ const BlogPage = () => {
   return (
     <Layout>
       <ol className="posts">
-        {data.allContentfulBlogPost.edges.map(edge => {
-          return (
-            <li className="post" key={edge.node.slug}>
-              <Link to={`/blog/${edge.node.slug}`}>
-                <h2>{edge.node.title}</h2>
-                <p>{edge.node.publishedDate}</p>
-              </Link>
-            </li>
-          )
-        })}
+        {data ? (
+          data.allContentfulBlogPost.edges.map(edge => {
+            return (
+              <li className="post" key={edge.node.slug}>
+                <Link to={`/blog/${edge.node.slug}`}>
+                  <h2>{edge.node.title}</h2>
+                  <p>{edge.node.publishedDate}</p>
+                </Link>
+              </li>
+            )
+          })
+        ) : (
+          <li className="post" key={`commingSoon`}>
+            <Link to="/blog">
+              <h2>Comming Soon!</h2>
+              <p>Blog will be displayed here.</p>
+            </Link>
+          </li>
+        )}
       </ol>
     </Layout>
   )
