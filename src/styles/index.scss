@@ -27,6 +27,19 @@
             font-weight: 700;
             margin-left: 11px;
         }
+        .card {
+            @media screen and (min-width: 768px) {
+                width: 18rem;
+                position: relative;
+                left: 33%;
+            }
+            @media screen and (max-width: 768px) {
+                width: 18rem;
+                position: relative;
+                left: 0;
+            }
+
+        }
     }
 }
 .home-container {
