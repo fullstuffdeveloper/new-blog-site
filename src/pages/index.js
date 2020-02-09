@@ -21,7 +21,13 @@ const HomePage = () => {
           <Card.Body>
             <Card.Title>Hey, I am Abhishek</Card.Title>
             <Card.Text>I love to design & build website for clients</Card.Text>
-            <Button variant="warning">Contact</Button>
+            <Button
+              variant="warning"
+              href="https://www.instagram.com/__full_stack_developer__/"
+              target="_blank"
+            >
+              Instagram
+            </Button>
           </Card.Body>
         </Card>
       </div>
