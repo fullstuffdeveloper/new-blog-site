@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/shared/layout/layout"
 import Head from "../components/shared/head"
 import "../styles/about.scss"
+import "bootstrap/dist/css/bootstrap.min.css"
 
 const AboutPage = () => {
   return (
