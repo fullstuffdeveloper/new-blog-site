@@ -28,6 +28,13 @@ const HomePage = () => {
             >
               Instagram
             </Button>
+            <Button
+              variant="warning"
+              href="https://github.com/abhi67srm"
+              target="_blank"
+            >
+              GitHub
+            </Button>
           </Card.Body>
         </Card>
       </div>
