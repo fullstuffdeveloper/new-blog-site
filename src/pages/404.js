@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/shared/layout/layout"
 import Head from "../components/shared/head"
+import "bootstrap/dist/css/bootstrap.min.css"
 
 const NotFound = () => {
   return (

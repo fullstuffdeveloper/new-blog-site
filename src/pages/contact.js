@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import Layout from "../components/shared/layout/layout"
 import contactStyles from "../styles/contact.module.scss"
 import Head from "../components/shared/head"
+import "bootstrap/dist/css/bootstrap.min.css"
 
 const ContactPage = () => {
   return (
