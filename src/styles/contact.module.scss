@@ -8,15 +8,26 @@
 }
 
 .main-text {
-    margin: 35% -4%;
-    font-family: cursive;
-    font-size: 30px;
-    @media screen and (max-width: 768px){
-        font-size: 22px;
+    @media screen and (max-width: 767px){
+        font-family: 'Lustria', serif; 
+        font-size: 14px;
         zoom: 150%;  
         text-align: justify;
         word-spacing: -3px;
-        line-height: 30px;      
+        line-height: 30px;
+        position: relative;
+        top: 11%;      
+    }
+    @media screen and (min-width: 768px){
+             font-family: 'Lustria', serif; 
+            font-size: 20px;
+            font-size: 14px;
+            position: relative;
+            top: 31%;
+            margin: 0 77px;
+            zoom: 150%;
+            text-align: justify;
+            line-height: 30px;    
     }
 }
 
