@@ -1,13 +1,37 @@
 .about-container {
     height: 100vh;
-    margin: 20% 15%;
+    // margin: 20% 15%;
+    position: relative;
+    top: 68px;
+    @media screen and (max-width: 767px) {
+        height: 100vh;
+        position: relative;
+        top: 25px;
+        left: 10px;
+    }
 
     p {
-        font-size: 30px;
-        font-family: cursive;
+        @media screen and (max-width: 767px) {
+             font-size: 14px;
+             font-family: 'Lustria', serif; 
+             zoom: 150%;
+             position: relative;
+             top: 9%;
+             line-height: 1.7;
+        }
+        @media screen and (min-width: 768px) {
+             font-size: 14px;
+             font-family: 'Lustria', serif; 
+             zoom: 150%;
+             position: relative;
+             top: 17%;
+                margin: 0 63px;
+             line-height: 1.7;
+        }
+      
     }
     &__fancy-text {
-        background: #00B1D2FF;
+        background: rgb(238, 241, 241);
         border-radius: 12px;
         text-transform: uppercase;
     }
