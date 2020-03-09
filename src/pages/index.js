@@ -38,14 +38,6 @@ const HomePage = () => {
           </Card.Body>
         </Card>
       </div>
-      {/* <div className="home-container">
-        <p className="home-container__first-main-text">Hello</p>
-        <p className="home-container__second-main-text">
-          I build website and mobile app
-          <FontAwesomeIcon icon={faHamburger} />
-        </p>
-        <p className="home-container__third-main-text">I am Abhishek</p>
-  </div> */}
     </Layout>
   )
 }

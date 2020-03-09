@@ -1,9 +1,10 @@
 *{
     margin: 0;
     padding: 0;
+    // background-color: yellow;
 }
 .head-container {
-    height: 100vh;
+    min-height: 100vh;
     color: black;
     background: #000;
     &__main-text {
@@ -12,8 +13,6 @@
             height: 100vh;        
         }
         left: 44px;
-        // top: 42%;
-        // left: 28%;
         .card-img-top {
             max-width: 100%;
             height: 50vh;
@@ -43,7 +42,7 @@
     }
 }
 .home-container {
-    height: 95vh;
+    height: 100vh;
     transform: rotate3d(1, 1, 1, 291deg);
     background-color: #12120f;
     z-index: 149;
