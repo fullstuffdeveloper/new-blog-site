@@ -1,17 +1,21 @@
 .posts {
     list-style-type: none;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     text-align: center;
     position: relative;
     top: 26px;
     left: 20%;
-    height: 100vh;
+    height: auto;
     @media screen and (max-width: 768px){
         position: relative;
         left: 0;
         top: 0;
     }
     
+}
+.blogContainer {
+    background: yellow;
 }
 .background {
     width: 75vh;

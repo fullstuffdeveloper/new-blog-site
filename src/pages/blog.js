@@ -22,7 +22,7 @@ const BlogPage = () => {
     }
   `)
   return (
-    <Layout>
+    <Layout className="blogContainer">
       <ol className="posts">
         {data ? (
           data.allContentfulBlogPost.edges.map(edge => {
