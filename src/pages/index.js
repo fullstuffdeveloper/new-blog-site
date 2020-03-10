@@ -10,9 +10,19 @@ import { Card, Button } from "react-bootstrap"
 
 const HomePage = () => {
   return (
-    <Layout className="head-container">
+    <Layout className="landing-page">
       <Head title="Home" />
-      <div className="head-container__main-text">
+      <div className="landing-page__container">
+        <div className="left-container"></div>
+        <div className="right-container">
+          <div className="main-text">
+            <p className="p first">Hello</p>
+            <p className="p second">I am Abhishek</p>
+            <p className="p third">I develop website and mobile app</p>
+          </div>
+        </div>
+      </div>
+      {/* <div className="head-container__main-text">
         <Card style={{ width: "18rem" }}>
           <Card.Img
             variant="top"
@@ -37,7 +47,7 @@ const HomePage = () => {
             </Button>
           </Card.Body>
         </Card>
-      </div>
+  </div> */}
     </Layout>
   )
 }
