@@ -7,16 +7,19 @@
     top: 26px;
     left: 20%;
     height: auto;
-    @media screen and (max-width: 768px){
+
+    @media screen and (max-width: 768px) {
         position: relative;
         left: 0;
         top: 0;
     }
-    
+
 }
+
 .blogContainer {
     background: yellow;
 }
+
 .background {
     width: 75vh;
     height: 75vh;
@@ -30,9 +33,10 @@
     width: 500px;
     height: 200px;
     display: inline-block;
-    background-image: linear-gradient(to right top,rgba(32, 192, 192, 0.8) rgba(78, 167, 167, 0.8)), url('../images/pineapple-supply-co-ag-wBPpLR9g-unsplash.jpg');
+    background-image: linear-gradient(to right top, rgba(255, 0, 0, 0.8) rgba(0, 0, 255, 0.8)), url('../images/pineapple-supply-co-ag-wBPpLR9g-unsplash.jpg');
     background-size: cover;
     background-position: top;
+
     // background: rgb(10, 10, 10);
     a {
         color: rgb(7, 7, 7);
@@ -46,8 +50,9 @@
 
     h2 {
         margin-bottom: 0;
-        @media screen and (max-width: 768px){
-          font-size: 1rem;
+
+        @media screen and (max-width: 768px) {
+            font-size: 1rem;
         }
     }
 
@@ -56,20 +61,22 @@
         font-style: 'lato';
         font-weight: 700;
         text-align: center;
+
         a {
             padding-top: 60px;
         }
     }
-    @media screen and (max-width: 768px){
+
+    @media screen and (max-width: 768px) {
         width: 339px;
         height: 153px;
-        
+
     }
 }
 
 .post:hover {
     box-shadow: 3px 3px 5px 6px yellow;
     position: relative;
-    background: #00B;
+    background: rgb(187, 0, 140);
     z-index: 100;
 }
